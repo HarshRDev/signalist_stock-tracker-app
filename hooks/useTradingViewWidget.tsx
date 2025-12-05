@@ -8,7 +8,7 @@ const containerRef = useRef<HTMLDivElement | null>(null)
     () => {
             if(!containerRef.current) return;
     if(containerRef.current.dataset.loaded) return;
-    containerRef.current.innerHTML = '<div class="tradingview-widget-container__widget" style="height: ${height}px; width: 100%;"></div>   ';
+    containerRef.current.innerHTML = `<div class="tradingview-widget-container__widget" style="height: ${height}px; width: 100%;"></div>`;
 
       const script = document.createElement("script");
       script.src =scriptUrl
